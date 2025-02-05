@@ -1,0 +1,20 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "@types/node": "^22.13.1"
+  },
+  "devDependencies": {
+    "lerna": "^8.1.9",
+    "npm-check-updates": "^17.1.14",
+    "typescript": "^5.7.3",
+    "prettier": "^3.4.2"
+  },
+  "scripts": {
+    "update": "npx npm-check-updates -u",
+    "format": "npx prettier . --write"
+  }
+}
