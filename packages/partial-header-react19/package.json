@@ -1,5 +1,5 @@
 {
-  "name": "partial-header",
+  "name": "partial-header-react19",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "build:watch": "tsc --noEmit && vite build --watch",
     "lint": "eslint .",
-    "preview": "vite preview --port 4010"
+    "preview": "vite preview --port 4020"
   },
   "dependencies": {
     "react": "^19.0.0",

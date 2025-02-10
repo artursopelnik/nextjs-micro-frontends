@@ -7,6 +7,19 @@ export const metadata: Metadata = {
   description: "Next.js example for Multi Zones",
 };
 
+/*
+with react 19
+<Script type="systemjs-importmap">
+  {`{
+      "imports": {
+        "react": "https://unpkg.com/umd-react@19.0.0-1/dist/react.production.min.js",
+        "react-dom/client": "https://unpkg.com/umd-react@19.0.0-1/dist/react-dom.production.min.js",
+        "partial-header": "${SOURCES.header}/partial-header.js"
+      }
+  }`}
+</Script>
+* */
+
 export default function RootLayout({
   children,
 }: {
@@ -18,8 +31,8 @@ export default function RootLayout({
         <Script type="systemjs-importmap">
           {`{
               "imports": {
-                "react": "https://unpkg.com/umd-react@19.0.0-1/dist/react.production.min.js",
-                "react-dom/client": "https://unpkg.com/umd-react/dist/react-dom.production.min.js",
+                "react": "https://unpkg.com/react@18.3.1/umd/react.production.min.js",
+                "react-dom": "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js",
                 "partial-header": "${SOURCES.header}/partial-header.js"
               }
           }`}
