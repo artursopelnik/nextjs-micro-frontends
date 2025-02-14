@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div
-      className={'partial-header'}
+      className={"partial-header"}
       style={{
         border: "1px solid #ccc",
         padding: "1rem",
@@ -17,7 +17,7 @@ function App() {
         maxWidth: "1000px",
         margin: "0 auto",
         textAlign: "center",
-        marginTop: '1rem'
+        marginTop: "1rem",
       }}
     >
       <div>
