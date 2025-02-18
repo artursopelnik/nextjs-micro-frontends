@@ -3,12 +3,13 @@ import { REWRITES } from "./rewrites";
 
 const { BLOG_URL, HEADER_URL } = process.env;
 
+
 const nextConfig: NextConfig = {
-  reactStrictMode: false,
+  reactStrictMode: true,
 
   async rewrites() {
     return REWRITES;
   },
-};
+}
 
-export default nextConfig;
+export default nextConfig

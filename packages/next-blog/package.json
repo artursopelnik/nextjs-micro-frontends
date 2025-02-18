@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "@demo/next-blog",
   "private": true,
   "version": "0.0.1",
   "scripts": {
