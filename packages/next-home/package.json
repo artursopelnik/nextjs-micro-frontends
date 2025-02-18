@@ -9,13 +9,13 @@
     "test": "jest --watch"
   },
   "dependencies": {
-    "@types/systemjs": "^6.15.1",
-    "next": "latest",
+    "next": "^15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "systemjs": "^6.15.1"
   },
   "devDependencies": {
+    "@types/systemjs": "^6.15.1",
     "@types/jest": "29.5.14",
     "@types/node": "^22.13.1",
     "@types/react": "19.0.8",

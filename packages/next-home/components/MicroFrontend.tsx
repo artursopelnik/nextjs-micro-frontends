@@ -35,8 +35,13 @@ export default function MicroFrontend({ containerId }: MicroFrontendProps) {
   useEffect(() => {
     let microFe: MicroFrontendModule | undefined;
     const loader = async () => {
-      microFe = await loadMicroFrontend(containerId);
-      microFe && microFe.mount(containerId);
+      try {
+        microFe = await loadMicroFrontend(containerId);
+        microFe && microFe.mount(containerId);
+      } catch (error) {
+        // Log an error if the micro frontend is unavailable
+        console.error(`Failed to load micro frontend "${containerId}":`, error);
+      }
     };
     loader();
 

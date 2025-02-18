@@ -33,7 +33,7 @@ export default function RootLayout({
               "imports": {
                 "react": "https://unpkg.com/react@18.3.1/umd/react.production.min.js",
                 "react-dom": "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js",
-                "partial-header": "${SOURCES.header}/partial-header.js"
+                "partial-header": "${SOURCES.header}/bundle.js"
               }
           }`}
         </Script>

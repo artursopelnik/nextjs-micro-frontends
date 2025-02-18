@@ -3,10 +3,13 @@
  * paths to multi zones to make sure that the logic is correct before deploying the application.
  */
 
-import { type MatchResult, compile, match } from "path-to-regexp";
-import nextConfig from "../next.config.js";
+import { type MatchResult, compile, match, ParamData } from "path-to-regexp";
+import nextConfig from "../next.config";
 
-function getDestination(destination: string, pathMatch: MatchResult): string {
+function getDestination(
+  destination: string,
+  pathMatch: MatchResult<ParamData>,
+): string {
   const hasDifferentHost = destination.startsWith("https://");
   if (hasDifferentHost) {
     const destinationUrl = new URL(destination);
