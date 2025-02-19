@@ -3,7 +3,8 @@
 This repository demonstrates how to serve multiple [Next.js](https://nextjs.org/) applications from a single domain using [Multi Zones](https://nextjs.org/docs/advanced-features/multi-zones).  
 Additionally, it showcases how to render multiple micro-frontends on a single page using [SystemJS](https://github.com/systemjs/systemjs).
 
-It also shows how to export web components with Stencil as React components and integrate them with SSR support.
+It also shows how to export web components with Stencil as React components and integrate them with SSR support. 
+The alternative with LIT didn't work. LIT web components might work with Page Router. Even the React Generator has bugs. I can't recommend LIT.
 
 ## Results
 
