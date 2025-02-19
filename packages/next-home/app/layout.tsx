@@ -32,12 +32,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script type="systemjs-importmap">
+        <Script type="systemjs-importmap" strategy="beforeInteractive">
           {`${importsForReact19}`}
         </Script>
-      <Script type="systemjs-importmap">
-
-      </Script>
       </head>
       <body>{children}</body>
     </html>
