@@ -11,7 +11,7 @@ const importsForReact19 = `{
   "imports": {
     "react": "https://unpkg.com/umd-react@19.0.0-1/dist/react.production.min.js",
     "react-dom/client": "https://unpkg.com/umd-react@19.0.0-1/dist/react-dom.production.min.js",
-    "partial-header": "${SOURCES.header}/partial-header.js"
+    "partial-header": "${SOURCES.header}/bundle.js"
   }
 }`
 

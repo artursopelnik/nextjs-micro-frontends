@@ -4,10 +4,10 @@ import { MyComponent } from '@demo/stencil-react-component-library/src/app/compo
 
 export default function About() {
     return (
-    <div suppressHydrationWarning>
+    <div>
         <p>This is the about page.</p>
         <div>
-            <MyComponent first="artur" last="sopelnik" />
+            <MyComponent first="max" last="musterman" />
         </div>
         <div>
             <Link href="/">Go Back</Link>
