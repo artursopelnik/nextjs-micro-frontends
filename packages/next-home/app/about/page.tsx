@@ -1,27 +1,16 @@
-'use client'
-
 import Link from "next/link";
-import {useEffect} from "react";
+
+import { MyComponent } from '@demo/stencil-react-component-library/src/app/components'
 
 export default function About() {
-    useEffect(() => {
-        async function fetchComponentLibrary() {
-            /* @ts-ignore */
-            return await import('@demo/component-library/dist/component-library.js')
-        }
-        fetchComponentLibrary();
-    }, [])
-
-
     return (
-    <div>
+    <div suppressHydrationWarning>
         <p>This is the about page.</p>
         <div>
-            {/* @ts-ignore */}
-            <my-button label="test" />
-
+            <MyComponent first="artur" last="sopelnik" />
+        </div>
+        <div>
             <Link href="/">Go Back</Link>
-
         </div>
     </div>
   );

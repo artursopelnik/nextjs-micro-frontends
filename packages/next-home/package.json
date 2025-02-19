@@ -9,7 +9,10 @@
     "test": "jest --watch"
   },
   "dependencies": {
-    "@demo/component-library": "^0.0.1",
+    "@stencil/react-output-target": "^0.8.2",
+    "@demo/lit-component-library": "^0.0.1",
+    "@demo/stencil-component-library": "^0.0.1",
+    "@demo/stencil-react-component-library": "^0.0.1",
     "next": "^15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
