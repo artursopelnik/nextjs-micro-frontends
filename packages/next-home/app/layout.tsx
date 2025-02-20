@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Script from "next/script";
-import { SOURCES } from "../rewrites";
+import { NEXT_SOURCES } from "../rewrites";
 
 export const metadata: Metadata = {
   title: "Next.js - Home Zone",
@@ -11,7 +11,7 @@ const importsForReact19 = `{
   "imports": {
     "react": "https://unpkg.com/umd-react@19.0.0-1/dist/react.production.min.js",
     "react-dom/client": "https://unpkg.com/umd-react@19.0.0-1/dist/react-dom.production.min.js",
-    "partial-header": "${SOURCES.header}/bundle.js"
+    "partial-header": "${NEXT_SOURCES.header}/bundle.js"
   }
 }`
 

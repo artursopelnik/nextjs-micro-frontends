@@ -7,11 +7,9 @@ export default function Home() {
       <Header />
       <p>This is our homepage</p>
       <div>
-        <a href="/blog">Blog</a>
-      </div>
-      <div>
-        <Link href="/about">About us</Link>
-        <br />
+        <Link href="/blog">Blog (Multi Zone)</Link><br /><br />
+        <Link href="/projects">Projects (Responsiv Iframe)</Link><br /><br />
+        <Link href="/about">About us (Webcomponent with SSR)</Link><br /><br />
         <Link href="/contact">Contact</Link>
       </div>
     </div>
